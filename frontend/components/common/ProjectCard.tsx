@@ -19,7 +19,8 @@ export default function ProjectCard({
   ProjectLink,
 }: Props) {
   return (
-    <div className="flex h-full flex-col rounded-md border border-transparent p-4 shadow-[0_0_4px_rgba(0,0,0,0.25)] transition-shadow duration-200 hover:border-red-500/30 hover:shadow-[0_0_10px_rgba(220,38,38,0.25)] dark:bg-[#1A1A1A] dark:shadow-[0_0_6px_rgba(255,255,255,0.08)]">
+    <div className="flex h-full flex-col rounded-md border border-transparent p-4 shadow-[0_0_4px_rgba(0,0,0,0.25)] 
+    transition-shadow duration-200 hover:shadow-[0_0_4px_rgba(0,0,0,0.60)]  dark:bg-[#1A1A1A] dark:shadow-[0_0_6px_rgba(255,255,255,0.08)]">
       <Image
         src={ImageSrc}
         alt={ImageAlt || "Image Title"}
@@ -40,7 +41,8 @@ export default function ProjectCard({
         </div>
 
         <button
-          className="mt-4 flex w-fit cursor-pointer items-center gap-1 rounded-md bg-red-700 px-2 text-[11px] font-semibold text-white transition-colors hover:bg-red-700 dark:bg-red-500 dark:hover:bg-red-600"
+          className="mt-4 flex w-fit cursor-pointer items-center gap-1 rounded-md bg-[#222222] px-2 text-[11px] font-semibold text-white transition-colors 
+          hover:bg-[#333333]"
           onClick={() => window.open(ProjectLink, "_blank")}
         >
           <Globe className="w-3" />

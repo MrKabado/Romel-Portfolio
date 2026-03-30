@@ -11,7 +11,7 @@ export default function Hero() {
   const icons: { icon: IconType; link: string }[] = [
     {
       icon: FaFacebook,
-      link: "https://www.facebook.com/jersonjay.bonghanoy",
+      link: "https://www.facebook.com/romel.balungag.9",
     },
     {
       icon: FaGithub,
@@ -44,7 +44,7 @@ export default function Hero() {
         <div className="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4 md:justify-start">
           <Link
             href="/contact"
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-red-700 px-4 py-2 text-white transition hover:bg-red-800 sm:w-auto dark:bg-red-500 dark:hover:bg-red-600"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#222222] px-4 py-2 text-white transition hover:bg-[#333333] sm:w-auto"
           >
             <Folder size={20} />
             View Outputs

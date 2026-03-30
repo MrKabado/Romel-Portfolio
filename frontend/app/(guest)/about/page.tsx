@@ -58,13 +58,12 @@ export default function AboutPage() {
     {
       name: "Facebook",
       icon: FaFacebook,
-      link: "https://www.facebook.com/jersonjay.bonghanoy",
+      link: "https://www.facebook.com/romel.balungag.9",
     },
   ]
 
   const Contacts: ContactType[] = [
     { name: "romelbalungag@gmail.com", icon: Mail },
-    { name: "+63 991 533 7883", icon: Phone },
     { name: "Cebu, Philippines", icon: MapPin },
   ]
 
@@ -89,7 +88,7 @@ export default function AboutPage() {
           className="h-40 w-full rounded-2xl object-cover sm:h-52 md:h-60"
         />
         <div className="-mt-16 ml-4 flex flex-col items-center gap-2 text-center sm:-mt-20 sm:ml-10 sm:flex-row sm:items-end sm:text-left">
-          <div className="rounded-full border-4 border-red-700 p-0.5">
+          <div className="rounded-full">
             <Image
               src={Profile}
               alt="Profile Picture"
@@ -100,7 +99,7 @@ export default function AboutPage() {
             <h1 className="text-lg font-semibold text-gray-800 sm:text-xl md:text-2xl dark:text-gray-300">
               Romel Balungag
             </h1>
-            <p className="sm:text-md text-sm text-gray-600 italic dark:text-gray-400">
+            <p className="sm:text-md text-sm text-red-700 italic dark:text-gray-400">
               Aspiring Web Developer
             </p>
           </div>

@@ -1,0 +1,20 @@
+import { Button } from "@/components/ui/button";
+import { Spinner } from "@/components/ui/spinner";
+
+export function ButtonSubmit({ props }: any) {
+  const submitted = props.submitted;
+  return (
+    <div>
+      {!submitted ? (
+        <Button type={props.buttonType} className={`bg-black hover:bg-[#333333] text-gray-100 cursor-pointer ${props.className}`} onClick={props.btnOnClick}>
+          {props.btnText}
+        </Button>
+      ):(
+        <Button type={props.buttonType} disabled className={`bg-[#333333] text-white ${props.className}`} onClick={props.btnOnClick}>
+          <Spinner className="mr-2 h-4 w-4 animate-spin" />
+          {props.btnLoadingText}...
+        </Button>
+      )}
+    </div>
+  );
+}

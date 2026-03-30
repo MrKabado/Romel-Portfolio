@@ -98,14 +98,14 @@ export default function ProjectHolder({ limit, isHome }: Props) {
           </div>
 
           <div>
-            <p className="font-medium">Explore more</p>
+            <p className={`font-medium ${!limit ? "hidden" : "block"}`}>Explore more</p>
             <Link
               href={"/projects"}
               className={`flex items-center justify-center gap-1 md:justify-start ${
                 !limit ? "hidden" : "flex"
               }`}
             >
-              <h1 className="md:text-md text-sm dark:text-gray-200 border bg-black 
+              <h1 className="md:text-md text-left text-sm dark:text-gray-200 border bg-black 
               text-white px-3 py-2 rounded-md hover:bg-[#222222]">
                 See all projects
               </h1>
