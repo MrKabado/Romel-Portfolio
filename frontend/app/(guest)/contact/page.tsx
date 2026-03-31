@@ -38,6 +38,12 @@ export default function ContactPage() {
 
   const HandleSubmit = async (e: any) => {
     e.preventDefault()
+
+    if (!fname || !lname || !email || !message) {
+      toast.error("Please fill in all fields.")
+      return
+    }
+
     setSubmitted(true)
 
     toast.success(`Thank you for messaging ${fname}!`)
